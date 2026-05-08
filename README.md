@@ -4,7 +4,7 @@ Interactive data visualization dashboard for analyzing tech industry layoffs by 
 
 ## Preview
 
-![US Layoffs Visualization Map](./public/images/layoffs-map.png)
+![US Layoffs Visualization Map](./public/images/图片1.png)
 
 ## Features
 
