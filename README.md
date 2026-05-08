@@ -1,13 +1,14 @@
 # Vue Python Layoffs Visualization
 
-A data visualization project built with Vue 3, Vite, and ECharts for analyzing the `tech_layoffs` dataset. It combines interactive charts, a U.S. map, and Python-based data processing to present layoffs by industry, region, funding stage, and company scale.
+This repository keeps the core Vue 3 + Vite + ECharts frontend for layoffs visualization, together with the essential static data in `public/static`.
 
-## Highlights
+## Included
 
-- Interactive dashboard with chart, map, and scatter views
-- Light/dark theme switching
-- Data aggregation by industry, location, funding stage, and company scale
-- Python scripts for data cleaning, transformation, and analysis
+- Vue 3 frontend source in `src`
+- Routing and chart views for the main dashboard
+- Static map assets in `public/static`
+- Main dataset at `public/static/data.json`
+- U.S. map and world map assets for geographic visualization
 
 ## Tech Stack
 
@@ -17,42 +18,14 @@ A data visualization project built with Vue 3, Vite, and ECharts for analyzing t
 - Vue Router
 - Element Plus
 - Axios
-- Python for preprocessing and analysis
 
 ## Project Structure
 
 - `src/components` - chart components
 - `src/views` - page-level views
 - `src/router` - route definitions
-- `src/python` - data transformation scripts and processed JSON files
-- `public/static` - static map assets
+- `public/static` - required visualization assets and data files
 
-## Setup
+## Repository Scope
 
-```sh
-pnpm install
-pnpm dev
-```
-
-## Build
-
-```sh
-pnpm build
-pnpm preview
-```
-
-## Code Quality
-
-```sh
-pnpm lint
-pnpm format
-```
-
-## Data Notes
-
-- The project uses processed JSON data generated from the original `tech_layoffs.xlsx` source.
-- Several analysis documents are included in the repository for reference.
-
-## Suggested GitHub Repository Name
-
-`vue-python-layoffs-visualization`
+This repo intentionally excludes the Python analysis scripts, reports, screenshots, and other generated artifacts to keep the project focused on the frontend deliverable.
