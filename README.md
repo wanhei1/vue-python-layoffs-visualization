@@ -1,14 +1,18 @@
 # Vue Python Layoffs Visualization
 
-This repository keeps the core Vue 3 + Vite + ECharts frontend for layoffs visualization, together with the essential static data in `public/static`.
+Interactive data visualization dashboard for analyzing tech industry layoffs by region, industry, funding stage, and company size using Vue 3, Vite, and ECharts.
 
-## Included
+## Preview
 
-- Vue 3 frontend source in `src`
-- Routing and chart views for the main dashboard
-- Static map assets in `public/static`
-- Main dataset at `public/static/data.json`
-- U.S. map and world map assets for geographic visualization
+![US Layoffs Visualization](./public/images/layoffs-map.png)
+
+## Features
+
+- Interactive maps showing layoff distribution across US regions
+- Industry and funding stage breakdown charts
+- Company scale impact analysis
+- Light/dark theme switching
+- Real-time data filtering and aggregation
 
 ## Tech Stack
 
@@ -21,11 +25,28 @@ This repository keeps the core Vue 3 + Vite + ECharts frontend for layoffs visua
 
 ## Project Structure
 
-- `src/components` - chart components
-- `src/views` - page-level views
-- `src/router` - route definitions
-- `public/static` - required visualization assets and data files
+- `src/components` - Reusable chart components
+- `src/views` - Page views (home, scatter)
+- `src/router` - Route configuration
+- `public/static` - Map assets and data files
 
-## Repository Scope
+## Setup
 
-This repo intentionally excludes the Python analysis scripts, reports, screenshots, and other generated artifacts to keep the project focused on the frontend deliverable.
+```sh
+pnpm install
+pnpm dev
+```
+
+## Build
+
+```sh
+pnpm build
+pnpm preview
+```
+
+## Code Quality
+
+```sh
+pnpm lint
+pnpm format
+```
